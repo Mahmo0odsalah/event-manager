@@ -10,6 +10,8 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
+    <%= link_to 'sign_out', destroy_user_session_path, method: :delete, data: {confirm: "Are you sure?"} %>
   </head>
 
   <body>
